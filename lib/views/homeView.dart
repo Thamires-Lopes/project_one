@@ -25,6 +25,9 @@ class HomeView extends StatelessWidget {
               ),
             ],
           ),
+          decoration: BoxDecoration(border: Border.all()),
+          height: 200,
+          width: 200,
         ),
       ),
     );
