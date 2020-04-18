@@ -8,16 +8,17 @@ class HomeView extends StatelessWidget {
       body: Center(
         child: Container(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               RaisedButton(
-                onPressed: null,
+                onPressed: () => {},
                 child: Text(
                   "Login",
                   style: TextStyle(color: Colors.blue),
                 ),
               ),
               RaisedButton(
-                onPressed: null,
+                onPressed: () => {},
                 child: Text(
                   "Sign Up",
                   style: TextStyle(color: Colors.blue),
@@ -25,7 +26,6 @@ class HomeView extends StatelessWidget {
               ),
             ],
           ),
-          decoration: BoxDecoration(border: Border.all()),
           height: 200,
           width: 200,
         ),
