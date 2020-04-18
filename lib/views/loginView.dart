@@ -4,7 +4,7 @@ class LoginView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //backgroundColor: Colors.blueAccent,
+      backgroundColor: Colors.blueGrey,
       body: Center(
         child: Container(
           height: 300,
@@ -32,6 +32,16 @@ class LoginView extends StatelessWidget {
                   color: Colors.grey,
                   fontSize: 20,
                 ),
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            RaisedButton(
+              onPressed: () => {},
+              child: Text(
+                "Enter",
+                style: TextStyle(color: Colors.blue),
               ),
             ),
           ]),
