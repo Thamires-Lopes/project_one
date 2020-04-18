@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_one/views/loginView.dart';
 
 class HomeView extends StatelessWidget {
   @override
@@ -11,7 +12,10 @@ class HomeView extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               RaisedButton(
-                onPressed: () => {},
+                onPressed: () => {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => LoginView()))
+                },
                 child: Text(
                   "Login",
                   style: TextStyle(color: Colors.blue),
