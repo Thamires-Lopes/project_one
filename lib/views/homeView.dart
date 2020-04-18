@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_one/views/loginView.dart';
+import 'package:project_one/views/signupView.dart';
 
 class HomeView extends StatelessWidget {
   @override
@@ -22,7 +23,10 @@ class HomeView extends StatelessWidget {
                 ),
               ),
               RaisedButton(
-                onPressed: () => {},
+                onPressed: () => {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => SignUpView()))
+                },
                 child: Text(
                   "Sign Up",
                   style: TextStyle(color: Colors.blue),
